@@ -10,10 +10,10 @@ const NivoResponsiveLine = dynamic(
 
 const SalesLineChart = (props: { salesData: APISale[] }): JSX.Element => {
   return (
-    <div className=" bg-white">
+    <div className="bg-white">
       <div className="p-5">
         <p className="text-2xl text-gray-600">Retail Sales</p>
-        <div style={{ height: 500, minWidth: 500 }}>
+        <div style={{ height: 500 }}>
           <NivoResponsiveLine
             data={salesDataToNivoData(props.salesData)}
             theme={{

@@ -20,9 +20,9 @@ const ProductPage = (props: ProductPageProps): JSX.Element => {
     <main className="flex flex-col min-h-screen bg-gray-100">
       <Header />
       <div className="mx-8 my-20">
-        <div className="w-full flex space-x-5">
+        <div className="flex space-x-5 w-full">
           <ProductDescription {...props} />
-          <div className="w-full flex-col space-y-5">
+          <div className="flex-col space-y-5 w-full min-w-0">
             <SalesLineChart salesData={props.sales} />
             <SalesDataTable salesData={props.sales} />
           </div>
